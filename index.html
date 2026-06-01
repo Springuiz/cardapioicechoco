@@ -14,21 +14,11 @@
   <source src="videos/intro1.mp4" type="video/mp4">
 </video>
 
-<script>
-const video = document.getElementById("intro");
-
-// tenta tocar
-video.play();
-
-// quando usuário interagir, libera som
-document.addEventListener("click", () => {
-    video.muted = false;
-}, { once: true });
-</script>
-  
 <button id="skipBtn">Pular Intro</button>
 
-  <script src="intro.js"></script>
+<script src="intro.js" defer></script>
+  
+<button id="skipBtn">Pular Intro</button>
 
 </body>
 </html>
