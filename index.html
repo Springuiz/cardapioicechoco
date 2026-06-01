@@ -10,21 +10,21 @@
 
 <body>
 
-<video id="intro" playsinline preload="auto">
+<video id="intro" autoplay playsinline preload="auto">
   <source src="videos/intro1.mp4" type="video/mp4">
 </video>
 
-<button id="start">Iniciar</button>
-
 <script>
 const video = document.getElementById("intro");
-const btn = document.getElementById("start");
 
-btn.onclick = () => {
-  video.play();
-  video.muted = false;
-  btn.style.display = "none";
-};
+// garante tentativa de play
+video.play().catch(() => {});
+
+// libera áudio após interação
+document.addEventListener("click", () => {
+    video.muted = false;
+    video.play();
+}, { once: true });
 </script>
   
 <button id="skipBtn">Pular Intro</button>
