@@ -10,9 +10,22 @@
 
 <body>
 
-<video id="intro" autoplay playsinline>
-    <source src="videos/intro1.mp4" type="video/mp4">
+<video id="intro" playsinline preload="auto">
+  <source src="videos/intro1.mp4" type="video/mp4">
 </video>
+
+<button id="start">Iniciar</button>
+
+<script>
+const video = document.getElementById("intro");
+const btn = document.getElementById("start");
+
+// só inicia com clique (funciona em TODO celular)
+btn.addEventListener("click", () => {
+    video.play();
+    btn.style.display = "none";
+});
+</script>
 
 <button id="skipBtn">Pular Intro</button>
 
