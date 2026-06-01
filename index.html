@@ -10,23 +10,10 @@
 
 <body>
 
-<video id="intro" autoplay playsinline preload="auto">
-  <source src="videos/intro1.mp4" type="video/mp4">
+<video id="intro" autoplay playsinline>
+    <source src="videos/intro1.mp4" type="video/mp4">
 </video>
 
-<script>
-const video = document.getElementById("intro");
-
-// garante tentativa de play
-video.play().catch(() => {});
-
-// libera áudio após interação
-document.addEventListener("click", () => {
-    video.muted = false;
-    video.play();
-}, { once: true });
-</script>
-  
 <button id="skipBtn">Pular Intro</button>
 
   <script src="intro.js"></script>
