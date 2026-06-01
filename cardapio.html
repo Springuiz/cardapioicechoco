@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>IceChoco x Hora de Aventura</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FONTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- ÍCONES -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+</head>
+
+    <div id="achievement" class="achievement">
+        🏆 Conquista desbloqueada!
+    </div>
+
+<body>
+
+    <!-- MODELOS -->
+    
+    <div class="models">
+
+        <!-- CARD PRODUTO -->
+
+        <div class="pizza-item">
+
+            <a href="">
+
+                <div class="pizza-item--img">
+                    <img src="" />
+                </div>
+
+                <div class="pizza-item--add">+</div>
+
+            </a>
+
+            <div class="pizza-item--price">R$ --</div>
+
+            <div class="pizza-item--name">--</div>
+
+            <div class="pizza-item--desc">--</div>
+
+        </div>
+
+        <!-- ITEM CARRINHO -->
+
+        <div class="cart--item">
+
+            <img src="" />
+
+            <div class="cart--item-nome">--</div>
+
+            <div class="cart--item--qtarea">
+
+                <button class="cart--item-qtmenos">-</button>
+
+                <div class="cart--item--qt">1</div>
+
+                <button class="cart--item-qtmais">+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            IceChoco 
+        </div>
+
+        <nav>
+
+            <a href="#menu">Cardápio</a>
+
+            <a href="#sobre">Sobre</a>
+
+            <a href="#promo">Promoções</a>
+
+        </nav>
+
+        <div class="menu-openner">
+
+            <span>0</span>🛒
+
+        </div>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <h1>
+                Hora de Aventura
+                       x
+                    IceChoco
+            </h1>
+
+            <p>
+                Sabores mágicos diretamente do Reino de Ooo 🍭✨
+            </p>
+
+            <a href="#menu" class="hero-btn">
+                Explorar Sabores
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- MAIN -->
+
+    <main id="menu">
+
+        <div class="section-title">
+
+            <h2>
+                Nosso Cardápio
+            </h2>
+
+            <p>
+                Escolha seu sabor favorito inspirado em Hora de Aventura
+            </p>
+
+        </div>
+
+        <div class="pizza-area"></div>
+
+        <!-- SOBRE -->
+
+        <section class="sobre" id="sobre">
+
+            <h2>
+                Sobre a IceChoco
+            </h2>
+
+            <p>
+                A IceChoco nasceu para transformar sobremesas em aventuras épicas.
+                Inspirados pelo universo de Hora de Aventura, criamos sabores únicos,
+                coloridos e cheios de personalidade para deixar cada visita mais divertida.
+            </p>
+
+        </section>
+
+        <!-- PROMO -->
+
+        <section class="promo" id="promo">
+
+            <div class="promo-card">
+
+                <h2>
+                    Combo Finn & Jake
+                </h2>
+
+                <p>
+                    Compre 2 sabores especiais e ganhe desconto mágico 🍦✨
+                </p>
+
+                <span>
+                    10% OFF
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- CARRINHO -->
+
+    <aside>
+
+        <div class="cart--area">
+
+            <!-- FECHAR -->
+
+            <div class="cart-minimize">
+                ➖ Minimizar
+            </div>
+
+            <div class="menu-closer">
+            </div>
+
+            <h1>
+                Seu Pedido
+            </h1>
+
+            <div class="cart"></div>
+
+            <div class="cart--details">
+
+                <div class="cart--totalitem subtotal">
+
+                    <span>Subtotal</span>
+
+                    <span>R$ --</span>
+
+                </div>
+
+                <div class="cart--totalitem desconto">
+
+                    <span>Desconto (-10%)</span>
+
+                    <span>R$ --</span>
+
+                </div>
+
+                <div id="mesaModal" class="mesa-modal">
+                    <div class="mesa-box">
+                        <h2>Escolha sua mesa</h2>
+                
+                        <select id="mesaSelect">
+                            <option value="1">Mesa 1</option>
+                            <option value="2">Mesa 2</option>
+                            <option value="3">Mesa 3</option>
+                            <option value="4">Mesa 4</option>
+                            <option value="5">Mesa 5</option>
+                            <option value="1">Mesa 6</option>
+                            <option value="2">Mesa 7</option>
+                            <option value="3">Mesa 8</option>
+                            <option value="4">Mesa 9</option>
+                            <option value="5">Mesa 10</option>
+                        </select>
+                
+                        <button id="confirmarMesa">
+                            Confirmar Pedido
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cart--totalitem total big">
+
+                    <span>Total</span>
+
+                    <span>R$ --</span>
+
+                </div>
+
+                <div class="cart--finalizar">
+
+                    Finalizar Compra
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- MODAL -->
+
+    <div class="pizzaWindowArea">
+
+        <div class="pizzaWindowBody">
+
+            <!-- IMAGEM -->
+
+            <div class="pizzaBig">
+
+                <img src="" />
+
+            </div>
+
+            <!-- INFO -->
+
+            <div class="pizzaInfo">
+
+                <h1>--</h1>
+
+                <div class="pizzaInfo--desc">--</div>
+
+                <!-- TAMANHO -->
+
+                <div class="pizzaInfo--sizearea">
+
+                    <div class="pizzaInfo--sector">
+
+                        Tamanho
+
+                    </div>
+
+                    <div class="pizzaInfo--sizes">
+
+                        <div data-key="0" class="pizzaInfo--size">
+
+                            Pequeno
+
+                            <span>300ml</span>
+
+                        </div>
+
+                        <div data-key="1" class="pizzaInfo--size">
+
+                            Médio
+
+                            <span>500ml</span>
+
+                        </div>
+
+                        <div data-key="2" class="pizzaInfo--size selected">
+
+                            Grande
+
+                            <span>700ml</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- PREÇO -->
+
+                <div class="pizzaInfo--pricearea">
+
+                    <div class="pizzaInfo--sector">
+
+                        Preço
+
+                    </div>
+
+                    <div class="pizzaInfo--price">
+
+                        <div class="pizzaInfo--actualPrice">
+
+                            R$ --
+
+                        </div>
+
+                        <div class="pizzaInfo--qtarea">
+
+                            <button class="pizzaInfo--qtmenos">
+
+                                -
+
+                            </button>
+
+                            <div class="pizzaInfo--qt">
+
+                                1
+
+                            </div>
+
+                            <button class="pizzaInfo--qtmais">
+
+                                +
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- BOTÕES -->
+
+                <div class="pizzaInfo--addButton">
+
+                    Adicionar ao Carrinho
+
+                </div>
+
+                <div class="pizzaInfo--cancelButton">
+
+                    Cancelar
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            IceChoco x Hora de Aventura
+        </p>
+
+        <div class="social">
+
+            <i class="fab fa-instagram"></i>
+
+            <i class="fab fa-tiktok"></i>
+
+            <i class="fab fa-youtube"></i>
+
+        </div>
+
+    </footer>
+
+
+    <audio id="bgMusic" loop>
+        <source src="images/background/islandsong.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- SCRIPTS -->
+
+    <script src="pizzas.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
