@@ -471,7 +471,7 @@ document.querySelector('.cart--finalizar').addEventListener('click', () => {
 
     if (!mesa) return;
 
-    let telefone = '5571986267114';
+    let telefone = '5571912345678';
 
     let total =
         document.querySelector('.total span:last-child')
